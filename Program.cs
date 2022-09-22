@@ -62,7 +62,7 @@ class Program
                 break;
         }
 
-        //user memilih apakah ingin menghitung lagi
+        //user memilih apakah ingin menghitung ulang
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Apakah kamu ingin menghitung lagi? (y/n)");
         Console.ForegroundColor = ConsoleColor.DarkGreen;
