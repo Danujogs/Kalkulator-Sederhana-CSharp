@@ -42,23 +42,23 @@ class Program
         {
             case 1:
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Hasil penjumlahan dari " + bil1 + " dan " + bil2 + " adalah " + (bil1 + bil2));
+                Console.WriteLine("Hasil penjumlahan dari " + bil1 + " dan " + bil2 + " adalah " + (bil1 + bil2) + "\n");
                 break;
             case 2:
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Hasil pengurangan dari " + bil1 + " dan " + bil2 + " adalah " + (bil1 - bil2));
+                Console.WriteLine("Hasil pengurangan dari " + bil1 + " dan " + bil2 + " adalah " + (bil1 - bil2) + "\n");
                 break;
             case 3:
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Hasil perkalian dari " + bil1 + " dan " + bil2 + " adalah " + (bil1 * bil2));
+                Console.WriteLine("Hasil perkalian dari " + bil1 + " dan " + bil2 + " adalah " + (bil1 * bil2) + "\n");
                 break;
             case 4:
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Hasil pembagian dari " + bil1 + " dan " + bil2 + " adalah " + (bil1 / bil2));
+                Console.WriteLine("Hasil pembagian dari " + bil1 + " dan " + bil2 + " adalah " + (bil1 / bil2) + "\n");
                 break;
             default:
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Operasi yang kamu pilih tidak tersedia!");
+                Console.WriteLine("Operasi yang kamu pilih tidak tersedia!\n");
                 break;
         }
 
@@ -75,7 +75,7 @@ class Program
         {
             //program keluar
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Tekan tombol apapun untuk keluar...");
+            Console.WriteLine("Terima kasih telah mencoba kalkulator sederhana!\nTekan tombol apapun untuk keluar...");
             Console.ReadKey();
         }
     }
