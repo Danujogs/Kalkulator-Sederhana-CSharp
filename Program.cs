@@ -15,7 +15,7 @@ class Program
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Berikut list operasi yang tersedia:");
         Console.ForegroundColor = ConsoleColor.DarkGreen;
-        Console.WriteLine("1. (+) Penjumlahan\n2. (-) Pengurangan\n3. (X) Perkalian\n4. (/) Pembagian");
+        Console.WriteLine("1. (+) Penjumlahan\n2. (-) Pengurangan\n3. (*) Perkalian\n4. (/) Pembagian");
 
         //memilih operasi matematika
         Console.ForegroundColor = ConsoleColor.White;
@@ -23,17 +23,19 @@ class Program
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         int operasi = Convert.ToInt32(Console.ReadLine());
 
-        //input bilangan pertama
+        //deklarasi variabel bilangan 1 dan 2
+        float bil1, bil2 = 0.0f;
+
+        //inisialiasi bilangan 1 dan 2
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Ketik bilangan pertama:");
         Console.ForegroundColor = ConsoleColor.DarkGreen;
-        int bil1 = Convert.ToInt32(Console.ReadLine());
+        bil1 = float.Parse(Console.ReadLine());
 
-        //input bilangan kedua
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Ketik bilangan kedua:");
         Console.ForegroundColor = ConsoleColor.DarkGreen;
-        int bil2 = Convert.ToInt32(Console.ReadLine());
+        bil2 = float.Parse(Console.ReadLine());
 
         //menampilkan hasil operasi matematika
         switch (operasi)
@@ -71,6 +73,7 @@ class Program
         }
         else
         {
+            //program keluar
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Tekan tombol apapun untuk keluar...");
             Console.ReadKey();
