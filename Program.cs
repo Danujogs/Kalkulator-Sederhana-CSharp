@@ -9,7 +9,7 @@ class Program
 
         //header
         Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("=== SELAMAT DATANG DI KALKULATOR SEDERHANA! ===");
+        Console.WriteLine("=== SELAMAT MENGGUNAKAN KALKULATOR SEDERHANA! ===");
 
         //list operasi matematika
         Console.ForegroundColor = ConsoleColor.White;
@@ -30,12 +30,12 @@ class Program
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Ketik bilangan pertama:");
         Console.ForegroundColor = ConsoleColor.DarkGreen;
-        bil1 = float.Parse(Console.ReadLine());
+        bil1 = float.Parse(Console.ReadLine() ?? "");
 
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Ketik bilangan kedua:");
         Console.ForegroundColor = ConsoleColor.DarkGreen;
-        bil2 = float.Parse(Console.ReadLine());
+        bil2 = float.Parse(Console.ReadLine() ?? "");
 
         //menampilkan hasil operasi matematika
         switch (operasi)
@@ -66,7 +66,7 @@ class Program
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Apakah kamu ingin menghitung lagi? (y/n)");
         Console.ForegroundColor = ConsoleColor.DarkGreen;
-        string ulang = Console.ReadLine();
+        string ulang = Console.ReadLine() ?? "";
         if (ulang == "y")
         {
             Main(args);
