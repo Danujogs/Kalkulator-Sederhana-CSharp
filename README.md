@@ -1,2 +1,2 @@
 # Kalkulator-Sederhana-CSharp
-Kalkulator sederhana menggunakan bahasa pemrograman C# dengan aplikasi Visual Studio Code.
+Kalkulator sederhana dengan bahasa pemrograman C# menggunakan aplikasi Visual Studio Code.
